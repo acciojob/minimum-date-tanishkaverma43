@@ -1,6 +1,16 @@
 function minDate(dates) {
   //write you code here
+	let min = dates[0];
+
+	for(let i=0; i<=dates.length; i++){
+	if(dates[i] < min){
+		min = dates[i];
+	}
+		}
+	return min;
 }
+let array = ["2023/03/01", "2023/03/02", "2023/03/03"];
+ console.log(minDate(array)); 
 
 // Do not change the code
 
